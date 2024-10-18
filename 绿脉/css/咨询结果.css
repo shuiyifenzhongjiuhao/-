@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width: 100%;
+    height:200px;
+}
+
+#hi1 {
+    width:100%;
+    height:320px;
+}
+.dh >ul{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px;
+    margin-top: 100px;
+    display: inline-flex;
+    background-color: forestgreen;
+}
+.dh >ul> li{
+    height: 30px;
+    width: 100%;
+    display:inline-block;
+    list-style: none;
+    font-size: 0.9em;
+}
+.dh ul li a{
+    text-align: center;
+    color: #EEEEEE;
+    font-size: larger;
+    font-family: 楷体;
+    width: 100%;
+    margin: 0px;
+    text-decoration: none;
+    display: block;
+    background-color: forestgreen ;
+    line-height: 50px;
+    border-bottom: 0px solid rgb(168,164,172);
+}
+.dh ul li a:hover{
+    color: #FFD700;
+    background-color: chartreuse;
+    border-bottom:3px solid darkolivegreen;
+}
+.dh ul li ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	height: 1200px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+	width: 1000px;
+}
+
+.chat-box {
+    padding: 15px;
+    max-height: 900px;
+    overflow-y: auto;
+	width: 1000px;
+	
+}
+
+.message {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message-content {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.from-user .message-content {
+    background-color: #e1f5fe;
+}
+
+.from-expert .message-content {
+    background-color: #ffe0b2;
+}
+
+.buttons {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.favorite-btn, .follow-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.favorite-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+.follow-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+a:hover{
+	color:lightgreen;
+	}
+a{
+	text-decoration: none;
+	color: black;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+	position: absolute;
+	top: 1900px;
+	width: 100%;
+}
+.input{
+	margin-top: 10px;
+	width: 1000px;
+}
+.input input{
+	width: 990px;
+	height: 30px;
+}

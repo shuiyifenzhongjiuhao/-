@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta nameviewport" content="width=device-width, initial-scale=1.0">
+    <title>政策法规检索结果</title>
+    <link rel="stylesheet" href="css/政策检索结果.css">
+</head>
+<body>
+    <div class="header">
+            <!--头部-->
+            <img id="hi1" src="img/屏幕截图 2024-10-15 182709.png">
+        </div>
+        <div class="dh">
+            <ul>
+                <li><a href="政策法规.html">政策法规</a></li>
+                <li><a href="线上咨询.html">线上咨询</a></li>
+                <li><a href="企业互助.html">企业互助</a></li>
+                <li><a href="地域特色分享.html">地域特色</a></li>
+                <li><a href="政府监督.html">政府监督</a></li>
+                <li><a href="登录.html">登录</a></li>
+            </ul>
+        </div>
+	<nav class="breadcrumb">
+	    ><a href="">政策法规</a> >
+	    <a href="">查询结果</a>
+	</nav>
+    
+
+     <main>
+            <div class="container">
+                <div class="sidebar">
+                    <section id="search-summary">
+                        <h2>查询信息</h2>
+                        <form id="search-form">
+                            <label for="region">所在地域：</label>
+                            <input type="text" id="region" name="region" value="北京市">
+    
+                            <label for="industry">企业类型：</label>
+                            <select id="search-type" name="search-type">
+                                <option value="政策" selected>国有企业</option>
+                                <option value="法规">民营企业</option>
+                                <option value="通知">外资企业</option>
+								<option value="通知">合资企业</option>
+                            </select>
+    
+                            <label for="search-type">政策法规类型类型：</label>
+                            <select id="search-type" name="search-type">
+                                <option value="政策" selected>国家法律</option>
+                                <option value="法规">地方政策</option>
+                                <option value="通知">行业规范</option>
+								<option value="通知">其他</option>
+                            </select>
+    
+                            <button type="submit">重新检索</button>
+                        </form>
+                    </section>
+                </div>
+                <div class="content">
+                    <section id="results">
+                        <h2>查询结果</h2>
+    
+                        <div class="result-item">
+                            <h3>《中共北京市委 北京市人民政府关于全面建设美丽北京加快推进人与自然和谐共生的现代化的实施意见》</h3>
+                            <p>发布单位：北京市生态环境局</p >
+                            <p>发布日期：2024年8月01日</p >
+                            <p>内容简介：为深入贯彻习近平生态文明思想和全国生态环境保护大会精神，落实中共中央、国务院《关于全面推进美丽中国建设的意见》，北京市印发实施《关于全面建设美丽北京加快推进人与自然和谐共生的现代化的实施意见》</p >
+                            <a  href="">了解更多</a>
+                        </div>
+    
+                        <div class="result-item">
+                            <h3>《市管企业碳达峰行动方案》</h3>
+                            <p>发布单位：北京市人民政府国有资产监督管理委员会</p >
+                            <p>发布日期：2022年12月21日</p >
+                            <p>内容简介：为全面贯彻落实党中央、国务院关于碳达峰碳中和的决策部署和《北京市碳达峰实施方案》有关要求，完整、准确、全面贯彻新发展理念，指导市管企业建立绿色低碳循环发展经济体系，为北京全面实现碳达峰碳中和目标贡献国企力量，结合市管企业实际，制定本行动方案。</p >
+                            <a href="">了解更多</a>
+                        </div>
+    
+                        <div class="result-item">
+                            <h3>《北京经济技术开发区促进绿色低碳高质量发展资金奖励办法》</h3>
+                            <p>发布单位：北京经济技术开发区管理委员会</p >
+                            <p>发布日期：2023年11月24日</p >
+                            <p>内容简介：为践行绿色低碳发展理念，深入推进生态文明建设，促进北京经济技术开发区（以下简称“经开区”）污染减排和节能降碳，持续推进“无废城市”建设，发展绿色建筑，加快推动碳达峰碳中和工作，建设宜居宜业绿色新城，结合生态环境保护和节能减碳重点任务，特制定本办法。</p >
+                            <a href="">了解更多</a>
+                        </div>
+						<div class="result-item">
+						    <h3>《北京市人民政府关于国营企业 开展多种经营若干政策的暂行规定》</h3>
+						    <p>发布单位：北京市人民政府</p >
+						    <p>发布日期：1987年04月10日</p >
+						    <p>内容简介：为增强国营企业活力，促进企业开展多种经营，发展第三产业，方便人民群众，根据国务院关于搞活企业，扩大企业自主权的有关规定的精神和本市情况，特作如下规定:</p >
+						    <a href="">了解更多</a>
+						</div>
+    
+                        <!-- 更多结果项可以继续添加 -->
+                    </section>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <p>&copy; 绿脉政策法规检索平台</p >
+        </footer>
+    
+        <script>
+            // 模拟重新检索功能
+            document.getElementById("search-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                const region = document.getElementById("region").value;
+                const industry = document.getElementById("industry").value;
+                const searchType = document.getElementById("search-type").value;
+    
+                alert(`您修改的检索条件：
+                所在地域：${region}
+                行业领域：${industry}
+                搜索类型：${searchType}`);
+                
+                // 在这里可以添加代码以根据修改的条件重新请求数据并更新结果部分
+            });
+        </script>
+</body>
+</html>
